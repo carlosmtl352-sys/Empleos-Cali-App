@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="Empleos Cali 2025")
 
 st.title("Generador de imágenes de empleo")
-st.caption("Empleos Cali 2025")
+st.caption("Empleos Cali 2026")
 
 cargo = st.text_input("Cargo")
 ciudad = st.text_input("Ciudad")
@@ -14,7 +14,8 @@ contrato = st.text_input("Tipo de contrato (opcional)")
 
 if st.button("Generar imagen"):
     if cargo and ciudad:
-        img = Image.open("plantilla.png").convert("RGB")
+        img = Image.open("plantilla.png.PNG
+").convert("RGB")
         draw = ImageDraw.Draw(img)
 
         texto = f"{cargo}\n{ciudad}"
